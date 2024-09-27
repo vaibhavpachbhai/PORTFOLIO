@@ -11,26 +11,27 @@ const services = [
     title: "Frontend Development",
     description: "Building responsive and interactive user interfaces.",
   },
+  
   {
     id: 3,
-    title: "Backend Development",
-    description: "Developing robust server-side logic and databases.",
-  },
-  {
-    id: 4,
-    title: "Full-Stack Development",
-    description: "Combining both frontend and backend development skills.",
-  },
-  {
-    id: 5,
     title: "Content Writing",
     description: "Writing content for your business and companies.",
   },
   {
-    id: 6,
+    id: 4,
     title: "Digital Marketing",
     description: "Promote your business with our digital marketing team.",
   },
+  {
+    id: 5,
+    title: "Website Maintenance & Support",
+    description: "Regular updates to keep functional and up-to-date with the latest features.",
+  },
+  {
+    id: 6,
+    title: "Mobile Optimization",
+    description: "Creating touch-friendly UI components and layouts optimized for mobile and tablet devices.",
+  }
 ];
 const Service = () => {
   return (
@@ -46,16 +47,16 @@ const Service = () => {
             >
               <div
                 className="text-right text-2xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-r from-green-600 to-blue-400"
+              bg-gradient-to-r from-red-400 to-yellow-500"
               >
                 {service.id}
               </div>
               <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-r from-green-400 to-blue-500">
+              bg-gradient-to-r from-red-400 to-yellow-500">
                 {service.title}
               </h3>
               <p className="mt-2 text-gray-300">{service.description}</p>
-              <a href="#" className="mt-4 inline-block text-green-400 hover:text-blue-500">Read More</a>
+              <a href="#" className="mt-4 inline-block text-red-400 hover:text-blue-500">Read More</a>
             </div>
           ))}
         </div>

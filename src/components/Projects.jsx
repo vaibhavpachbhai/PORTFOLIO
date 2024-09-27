@@ -1,28 +1,26 @@
 import React from "react";
-import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/admin-dashboard.png";
+import AmazonImage from "../assets/amazon.png";
+import BurgerImage from "../assets/burger.png";
+import TicTacToeImage from "../assets/tic-tac-toe.png";
 
 const projects = [
   {
     id: 1,
-    name: "Employee MS",
-    technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "Amazon-Clone",
+    image: AmazonImage,
+    github: "https://github.com/vaibhavpachbhai/HTML-CSS-PROJECTS/tree/main/AMAZON-CLONE",
   },
   {
     id: 2,
-    name: "Blog App",
-    technologies: "MERN Stack",
-    image: bookMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "Burger-Hut",
+    image: BurgerImage,
+    github: "https://github.com/",
   },
   {
     id: 3,
-    name: "Book MS",
-    technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    name: "Tic-Tac-Toe",
+    image: TicTacToeImage,
+    github: "https://github.com/vaibhavpachbhai/JAVASCRIPT-PROJECTS/tree/main/TIC%20TAC%20TOE",
   },
 ];
 
@@ -40,7 +38,7 @@ const Projects = () => {
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
               <a href={project.github} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
+              from-red-400 to-yellow-500 text-white px-4 py-2 rounded-full" target="_blank" 
               rel="noopener noreferrer">GitHub</a>
             </div>
           ))}
